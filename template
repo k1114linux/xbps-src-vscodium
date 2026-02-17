@@ -1,5 +1,5 @@
 pkgname=codium
-version=1.108.10359
+version=1.109.41146
 revision=1
 only_for_archs="x86_64"
 wrksrc="${pkgname}-${version}"
@@ -10,7 +10,7 @@ maintainer="qwerty qwerty <qwerty@qwerty.qwerty>"
 license="MIT"
 homepage="https://vscodium.com"
 distfiles="https://github.com/VSCodium/vscodium/releases/download/${version}/VSCodium-linux-x64-${version}.tar.gz"
-checksum=36f202367834ebd67aaaf2f74e78cbbbcdb0c9f1b28c7f302bd68dc36611d899
+checksum=6d25f29f2b7aeb814179c005e8902afe5c66f8e97f0d1db542e3bc62fdc4ec5b
 
 do_install() {
         vmkdir usr/lib/codium
