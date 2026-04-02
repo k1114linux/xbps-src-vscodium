@@ -1,5 +1,5 @@
 pkgname=codium
-version=1.109.41146
+version=1.112.01907
 revision=1
 only_for_archs="x86_64"
 wrksrc="${pkgname}-${version}"
@@ -10,7 +10,7 @@ maintainer="qwerty qwerty <qwerty@qwerty.qwerty>"
 license="MIT"
 homepage="https://vscodium.com"
 distfiles="https://github.com/VSCodium/vscodium/releases/download/${version}/VSCodium-linux-x64-${version}.tar.gz"
-checksum=6d25f29f2b7aeb814179c005e8902afe5c66f8e97f0d1db542e3bc62fdc4ec5b
+checksum=08fe2d219843a02e7a4fa37445479b351c370a3c46f36a1d1ede1663cae0992f
 
 do_install() {
         vmkdir usr/lib/codium
@@ -20,4 +20,4 @@ do_install() {
         ln -s /usr/lib/codium/bin/codium ${DESTDIR}/usr/bin/
 }
 depends="gcc make pkg-config libX11-devel libxkbfile-devel libsecret-devel \
-rpm libxkbcommon libxkbcommon-x11"
+libxkbcommon libxkbcommon-x11"
